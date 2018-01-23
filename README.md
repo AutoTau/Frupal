@@ -4,10 +4,6 @@ Developed by: TheBestCS300Group
 
 ## Compiling
 
-Get a copy of the code with git.
-
-`git clone https://github.com/BrianDavidAllen/TheBestCS300Group.git`
-
 Navigate to a directory under src/ with the code you wish to compile. For example, to compile the sample ajax and json code, enter the directory and run g++:
 
 `g++ -std=c++11 -static *.cpp`
