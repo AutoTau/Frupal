@@ -1,0 +1,330 @@
+/* Daniel Dupriest, 2017
+ * Styles for web client
+ */
+
+@font-face {
+    font-family: gamefont;
+    src: url(font.ttf);
+}
+
+a, a:link, a:visited, a:hover {
+    color: #2facff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+article {
+    margin: 0 auto;
+    /*max-width: 516px;*/
+    padding: 1rem 7.5% 1rem;
+}
+
+.axe {
+    background-image: url('../images/tool.png');
+}
+
+.binoculars {
+    background-image: url('../images/binoculars.png');
+}
+
+.blackberry-bush {
+    background-image: url('../images/blackberrybush.png');
+}
+
+.boulder {
+    background-image: url('../images/boulder.png');
+}
+
+body {
+    background: black url("../images/map.png");
+    background-size: 100% 100%;
+    color: #414344;
+    font-family: sans-serif;
+    height: 100%;
+    line-height: 1.4rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.chainsaw {
+    background-image: url('../images/tool.png');
+}
+
+.chisel {
+    background-image: url('../images/tool.png');
+}
+
+.content {
+    background-size: 100% 100%;
+    height: 20px;
+    width: 20px;
+}
+
+
+.false {
+    background: black !important;
+    box-shadow: 0px 0px 1em 0.1em rgba(0,0,0,1);
+    z-index: 10;
+}
+
+.false .content {
+    background: black;
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+h1 {
+    background: #2facff;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 1.8rem;
+    font-style: normal;
+    padding: 1rem;
+    text-align: center;
+}
+
+h2 {
+    color: #000000;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.4rem;
+}
+
+h3 {
+    color: #333333;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1rem;
+}
+
+.hatchet {
+    background-image: url('../images/tool.png');
+}
+
+#hero,
+#items {
+    padding: .25em .5em;
+}
+
+html {
+    font-size: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#inventory {
+    background: #333333;
+    color: #999999;
+    display: table-cell;
+    padding: 0;
+}
+
+#inventory h3 {
+    color: #fff;
+}
+
+#main.hide #inventoryCloseButton,
+#main.hide #inventory {
+    display: none;
+}
+
+#main.hide #inventoryOpenButton {
+    display: table-cell;
+}
+
+#inventoryCloseButton,
+#inventoryOpenButton {
+    cursor: pointer;
+    display: table-cell;
+    font-family: sans-serif;
+    font-size: 200%;
+    width: 30px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#inventoryOpenButton {
+    display: none;
+}
+
+#inventoryOpenButton:hover,
+#inventoryCloseButton:hover {
+    background: #555555;
+    color: #ffffff;
+}
+
+.jackhammer {
+    background-image: url('../images/tool.png');
+}
+
+.machete {
+    background-image: url('../images/tool.png');
+}
+
+#main {
+    background: #333333;
+    display: table;
+    font-family: gamefont;
+    padding: 0px;
+}
+
+.main-row {
+    display: table-row;
+}
+
+#map {
+    overflow: hidden;
+}
+
+#mapContainer {
+    display: table-cell;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+p {
+    color: #666666;
+    margin: .4rem 0;
+}
+
+.plain {
+    background: green;
+}
+
+#player {
+    background-color: transparent;
+    background-image: url('../images/hero.png');
+    background-size: 100% 100%;
+    height: 20px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    transition: all .15s linear;
+    width: 20px;
+    z-index: 1000
+}
+
+.power-bar {
+    background-image: url('../images/power.png');
+}
+
+.royal-diamonds {
+    background-image: url('../images/diamonds.png');
+}
+
+section {
+    background: #ffffff;
+    border-radius: .25em;
+    box-shadow: 0 .1em .2em rgba(0,0,0,0.4);
+    color: #666666;
+    margin: .5em .5em 0 .5em;
+    padding: .25em .5em
+}
+
+section + section {
+    margin-top: 1em;
+}
+
+.shears {
+    background-image: url('../images/tool.png');
+}
+
+.sledge {
+    background-image: url('../images/tool.png');
+}
+
+.tile {
+    background-size: 100% 100%;
+    height: 20px;
+    position: absolute;
+    width: 20px;
+}
+
+#titleScreen {
+    background: black url('../images/title.png') center center no-repeat;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transition: height 1s ease;
+    z-index: 2000;
+}
+
+.close {
+    height: 0px !important;
+}
+
+#toolButtons {
+    background: #333333;
+    color: #ffffff;
+    font-size: 140%;
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    padding: .25em .5em;
+    width: 200px;
+    z-index: 1500;
+}
+
+#toolButtons p {
+    color: #ffffff;
+}
+
+.tree {
+    background-image: url('../images/tree.png');
+}
+
+.type-1-treasure-chest,
+.type-2-treasure-chest {
+    background-image: url('../images/chest.png');
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 1.4rem;
+}
+
+.type0 {
+    background-image: url('../images/grass.png');
+}
+
+.type1 {
+    background-image: url('../images/forest.png');
+}
+
+.type2 {
+    background-image: url('../images/water.png');
+}
+
+.type3 {
+    background-image: url('../images/wall.png');
+}
+
+.type4 {
+    background-image: url('../images/bog.png');
+}
+
+.type5 {
+    background-image: url('../images/swamp.png');
+}
+
+.water {
+    background: blue;
+}
