@@ -6,7 +6,7 @@ Developed by: TheBestCS300Group
 
 Get a copy of the code with git.
 
-`git clone https://github.com/BrianDavidAllen/TheBestCS300Group.git`
+`git clone https://github.com/AutoTau/Frupal.git`
 
 Navigate to a directory under src/ with the code you wish to compile. For example, to compile the sample ajax and json code, enter the directory and run g++:
 
